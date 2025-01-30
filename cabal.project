@@ -7,4 +7,5 @@ flags: -book
 documentation: True
 
 package *
-  ghc-options: -haddock
+  ghc-options: -v -haddock "-optl-fuse-ld=lld"
+  ld-options: -v -fuse-ld=lld
